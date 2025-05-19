@@ -1,0 +1,85 @@
+/* Container for the whole to-do app */
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Input and Add button */
+.container input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 65%;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+/* List style reset */
+ol {
+  padding-left: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+/* Text and button group layout */
+.text {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+/* Group all buttons in a row */
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Base button style */
+.button-group button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Button variants */
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.move-up-button,
+.move-down-button {
+  background-color: #007bff;
+  color: white;
+}
+.move-up-button:hover,
+.move-down-button:hover {
+  background-color: #0069d9;
+}
+
